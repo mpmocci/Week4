@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+</head>
+<body>
+
+    <form>
+        <label>Nome</label>
+        <input type="text" placeholder="Nome" />
+        <br /><br />
+
+        <label>Nome</label> <!--Required: vuol dire che questo campo DEVE essere riempito-->
+        <input type="text" placeholder="Cognome" required="required" />
+        <br /><br />
+
+        <label>Password</label> <!--Pattern con min 8 caratteri, 1 Upper , 1 Lower, 1 number-->
+        <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" title="Minimum eight characters, at least one uppercase letter, one lowercase letter and one number" />
+        <!--Input pwd:Fa vedere i pallini, Title: messaggio che appare se il formato è sbagliato-->
+        <br /><br />
+
+        <!--Menu a tendina-->
+
+        <label>Sesso</label>
+        <select>
+            <!--il value nella option serve per poi recuperare la scelta dell'utente, ma non è necessaria'-->
+            <option>Seleziona un'opzione</option>
+            <option value="1">F</option>
+            <option value="2">M</option>
+            <option value="3">Non dichiarato</option>
+        </select>
+
+        <!--Utilizzo del radio button invece che del menu a tendina-->
+        <label><input type="radio" name="Sesso" value="1" />F</label>
+        <label><input type="radio" name="Sesso" value="2" />M</label>
+        <label><input type="radio" name="Sesso" value="3" />Non dichiarato</label>
+        <!--se il campo Name non è lo stesso permette di selezionare contemporaneamente più voci-->
+
+
+        <br /><br />
+
+        <!--Type checkbox-->
+        <label>Skills</label>
+        <label><input type="checkbox" name="C#"/>C#</label>
+        <label><input type="checkbox" name="HTML5"/>HTML5</label>
+        <label><input type="checkbox" name="SQL"/>SQL</label>
+
+
+
+        <!--Submit per inviare la form al server-->
+        <br /><br />
+        <input type="submit" value="Registrati" />
+
+
+    </form>
+
+</body>
+</html>
