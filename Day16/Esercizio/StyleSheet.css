@@ -2,7 +2,7 @@
 }
 
 
-header{
+header {
     display: inline;
 }
 
@@ -10,7 +10,7 @@ header{
 #logo {
     width: 130px;
     height: 90px;
-    float:left;
+    float: left;
 }
 
 
@@ -18,12 +18,12 @@ header{
     font-family: georgia;
     font-size: 30px;
     color: steelblue;
-    float:left;
+    float: left;
 }
 
 
 
-nav{
+nav {
     font-family: georgia;
     clear: left;
     background-color: lightblue;
@@ -82,31 +82,52 @@ footer {
     background-color: lightblue;
     padding: 10px;
     margin-top: 9em;
-    margin-bottom:0em;
+    margin-bottom: 0em;
 }
 /*** Prenota ****/
 #form {
     margin-top: 8em;
+    float: left;
+    margin-bottom: 8em;
+    font-size:medium;
 }
 
+
+#imm_prenota {
+    margin-top: 8em;
+    float: right;
+    height: 400px;
+    margin-bottom: 8em;
+}
+
+#form + imm_prenota{
+    display: inline-block;
+}
+
+
+
 .button {
-    background-color: paleturquoise;
-    color: black;
+    background-color: lightblue;
+    color: dimgrey;
+    font-family: Georgia;
     padding: 20px;
     text-align: center;
     display: inline-block;
-    font-size: 13px;
-    border-radius: 30%;
+    font-size: 20px;
+    border-radius: 20%;
 }
 
+
+
+
 /*** Camere ****/
-table{
-    background-color:lightblue;
+table {
+    background-color: lightblue;
     margin-top: 8em;
     width: 80%;
     font-family: georgia;
     font-size: 12px;
-    color:gray;
+    color: gray;
     border: 1px solid black;
     border-collapse: collapse;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -128,7 +149,7 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:nth-child(odd) {
-    background-color:lightsteelblue;
+    background-color: lightsteelblue;
     color: royalblue;
 }
 
@@ -137,5 +158,25 @@ tbody tr:hover {
     background-color: lightgrey;
     color: mediumvioletred;
 }
+
+
+/**Barra navigazione verticale per schermi piccoli*/
+
+@media screen and (max-width: 660px) {
+    barra {
+        float: none;
+        width: 100%;
+    }
+
+    /***Far scomparire immagine quando schermo piccolo */
+
+    @media screen and (max-width: 600px) {
+        #immPrenota {
+            display: none;
+        }
+    }
+
+
+    /**LOGIN form*/
 
 

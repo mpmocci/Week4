@@ -1,0 +1,83 @@
+﻿/*CAMBIAMENTO DEL COLORE DI SFONDO DELLA PAGINA AL VARIARE DELLE DIMENSIONI DELLO SCHERMO*/
+body {
+    background-color: rosybrown;
+}
+/* Su schermi di 992px o meno, imposta il background-color a un certo colore */
+@media screen and (max-width: 992px) {
+    body {
+        background-color: powderblue;
+    }
+}
+/* Su schermi di 660px o meno, imposta il background-color a un certo colore */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: thistle;
+    }
+}
+
+
+/*NASCONDERE CERTI ELEMENTI QUANDO LO SCHERMO è PICCOLO*/
+#daNascondere {
+    border: 2px solid red;
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width: 600px) {
+    #daNascondere {
+        display: none;
+    }
+}
+
+/*RESPONSIVE FLEXBOX*/
+#div1 {
+    background-color: aliceblue;
+    flex: 50%; /*Occupa il 50% dello schermo*/
+}
+
+#div2 {
+    background-color: lightsteelblue;
+    flex: 50%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; /*Quando lo schermo è grande, la direzione di flex
+        è quella di una riga (orizzontale)*/
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; /*quando lo schermo è piccolo, la direzione 
+            di flex è della colonna (verticale)*/
+    }
+}
+
+/*STILE DELLA NAV BAR ORIZZONTALE*/
+ul {
+    padding: 0;
+    list-style-type: none;
+    background: white;
+    overflow: hidden;
+}
+
+li a {
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: purple;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+    li a:hover {
+        background-color: lightgrey;
+    }
+
+/*Per schermi minori o uguali a 600px, navbar verticale*/
+@media screen and (max-width: 600px) {
+    li a {
+        float: none;
+        width: 100%;
+    }
+}

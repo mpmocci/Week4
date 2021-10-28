@@ -1,0 +1,40 @@
+﻿body {
+
+    background-color:rosybrown;
+}
+
+/*Selettore dell'attributo id -> # */
+#logo{
+    width:70px;
+    height:70px;
+    border:dotted;
+}
+
+h1{
+    color:darkcyan;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:xx-large;
+}
+
+p{
+    color:saddlebrown
+}
+
+/*Selettore di class name-> . */
+
+.center{
+    text-align:center;
+}
+
+.left{
+    text-align:left;
+}
+
+.right{
+    text-align:right;
+}
+
+/*Selettore combinato */
+p,.danger{
+    border:3px solid red;
+}

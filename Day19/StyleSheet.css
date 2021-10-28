@@ -1,0 +1,36 @@
+﻿body {
+}
+
+
+#logo {
+    width: 8%;
+    float: left;
+    margin-right:5em;
+    margin-bottom: 8em;
+}
+
+
+#nome {
+    font-family: georgia;
+    font-size: 30px;
+    color: sandybrown;
+    float: left;
+    margin-bottom: 8em;
+}
+
+.container-fluid{
+    float:left;
+}
+
+#elicriso{
+    width:100%
+}
+
+#myForm{
+
+    float:left;
+}
+
+.navbar-custom {
+    background-color: blue;
+}

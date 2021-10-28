@@ -6,30 +6,36 @@
 
     <link href="StyleSheet.css" rel="stylesheet" />
 
+    <script src="javaScript2.js"></script>
+
 </head>
 
 
 
-<body>
+<body onload="checkLoggedUser(); welcome()">
 
     <header>
         <img id="logo" src="suGologoneLogo.jpg" /><img />
         <h1 id="nome_hotel">Su Gologone</h1>
+
     </header>
 
-    <nav>
+
+
+    <nav id="barra">
+
         <a href="Homepage.html">Homepage|</a>
         <a href="Camere.html">Camere|</a>
         <a href="Contatti.html">Contatti|</a>
+
     </nav>
 
-    <main>
+ 
 
         <img id="imm1_homepage" src="https://www.sugologone.it/public/SITO%20TABLAO/3.jpg" />
 
 
 
-        <article>
             <header>
                 <h2>Il nostro Hotel</h2>
 
@@ -54,11 +60,14 @@
                     </div>
 
                 </div>
+
+
             </p>
-        </article>
 
 
-    </main>
+
+
+    <button id="accedi" type="button" value="Accedi" onclick="openForm(); checkLoggedUser();">Accedi</button>
 
 
 
