@@ -12,10 +12,12 @@
 <body onload="checkLoggedUser(); btnDisabled()">
 
 
-    <header>
-        <img id="logo" src="logo.png" /><img />
-        <h1 id="nome">Erboristeria Officinale</h1>
-    </header>
+    <div id="header">
+        <header>
+            <img id="logo" src="logo.png" /><img />
+            <h1 id="nome">Erboristeria Officinale</h1>
+        </header>
+    </div>
 
     <br /><br />
 
@@ -65,15 +67,15 @@
     </main>
 
 
-
-    <footer class="bg-light text-center text-lg-start" id="footer">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: khaki ;">
-            © 2021 Copyright: M. Paola Mocci
-        </div>
-        <!-- Copyright -->
-    </footer>
-
+    <div class="container-fluid">
+        <footer class="bg-light text-center text-lg-start" id="footer">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: khaki ;">
+                © 2021 Copyright: M. Paola Mocci
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
